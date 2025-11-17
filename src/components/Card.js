@@ -11,13 +11,13 @@ const Card = () => {
 
   const getSectionIndex = () => {
     if(!path) return "";
-    if (path === "form-link") {
+    if (path === "form") {
       return 1;
     }
-    if (path === "form-ref-link") {
+    if (path === "form-ref") {
       return 2;
     }
-    if (path === "form-state-link") {
+    if (path === "form-state") {
       return 3;
     }
     return "";
@@ -26,9 +26,9 @@ const Card = () => {
     <div className='style-card'>
         <h2>Section {getSectionIndex()}</h2>
         <Routes>
-            <Route path="/form-link" element={<Form />} />
-            <Route path="/form-ref-link" element={<FormRef />} />
-            <Route path="/form-state-link" element={<FormState />} />
+            <Route path="/form" element={<Form />} />
+            <Route path="/form-ref" element={<FormRef />} />
+            <Route path="/form-state" element={<FormState />} />
         </Routes>
     </div>
   )
