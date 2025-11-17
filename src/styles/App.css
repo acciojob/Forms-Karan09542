@@ -9,4 +9,45 @@ button{
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #27aedb;
+    cursor: pointer;
+
 }
+
+a {
+    text-decoration: underline solid #27aedb85;
+    text-underline-offset: 3px;
+}
+ul {
+    display: flex;
+    list-style: none;
+    gap: 0.5em;
+}
+ul li a {
+    color: #27aedb;
+}
+
+.style-card {
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+}
+.style-card form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+
+    border: 1px solid #27aedb;
+    padding: 30px 10px 20px;
+    border-radius: 10px;
+}
+.style-card form input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
